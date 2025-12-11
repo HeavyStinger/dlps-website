@@ -1,0 +1,21 @@
+:root {
+    /* Backgrounds */
+    --background-color: rgb(245, 245, 245);       /* Light neutral gray */
+    --primary-color: rgb(255, 255, 255);          /* White for cards/sections */
+
+    /* Brand / Accent */
+    --accent-color: rgb(0, 168, 160);           /* Tropical teal for links, buttons, highlights */
+    --accent-color-transparent: rgba(91, 183, 168, 0.5);
+    --accent-hover-color: rgb(0, 124, 117);     /* Darker teal for hover states */
+
+    /* Text */
+    --primary-text-color: rgb(51, 51, 51);     /* Dark charcoal for main text */
+    --secondary-text-color: rgb(119, 119, 119);   /* Medium gray for subtitles/labels */
+
+    /* Fonts */
+    --primary-font: "Montserrat", sans-serif;
+
+    /* Spacing */
+    --page-x-deadzone: 30px;   /* horizontal spacing from page edges */
+    --page-y-spacing: 50px;    /* vertical spacing between sections */
+}
