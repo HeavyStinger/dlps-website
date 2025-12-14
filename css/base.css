@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    width: 100vw;
     background-color: var(--background-color);
     color: var(--primary-text-color);
     font-family: var(--primary-font);
@@ -43,7 +44,7 @@ nav {
     align-items: center;
     box-shadow: 0 0px 5px var(--accent-color-transparent);
     position: relative;
-    /* z-index: 2; */
+    z-index: 2;
 }
 
 nav > .logo {
@@ -115,7 +116,15 @@ nav > .nav-links > .cta-button {
 
 @media only screen and (min-width: 950px) {
     nav {
+        background-color: transparent;
         justify-content: space-evenly;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    nav > .logo {
+        color: white;
     }
 
     nav > .hamburger {
@@ -141,6 +150,7 @@ nav > .nav-links > .cta-button {
 
     nav > .nav-links > .nav-link {
         padding: 0;
+        color: white;
         border: none;
     }
 

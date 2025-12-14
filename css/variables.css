@@ -18,4 +18,6 @@
     /* Spacing */
     --page-x-deadzone: 30px;   /* horizontal spacing from page edges */
     --page-y-spacing: 50px;    /* vertical spacing between sections */
+
+    --mobile-nav-height: 60px;
 }
