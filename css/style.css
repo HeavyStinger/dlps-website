@@ -127,7 +127,7 @@
 
 .about-home > .content {
     width: 100%;
-    margin-top: 10px;
+    margin-top: var(--inner-section-spacing);
     padding: 0 var(--page-x-deadzone);
     display: flex;
     flex-direction: column;
@@ -135,11 +135,17 @@
 }
 
 .about-home > .content > .left {
-    height: 350px;
+    height: 250px;
     width: 100%;
 }
 
 .about-home > .content > .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-home > .content > .right > .top {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -186,6 +192,72 @@
     gap: 10px;
 }
 
-.about-home > .content > .right > .top > .left > .bottom {
+.about-home > .content > .right > .top > .left > .bottom, .about-home > .content > .right > .top > .right {
     height: 250px;
+}
+
+@media only screen and (min-width: 680px) {
+    .about-home > .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        position: relative;
+    }
+
+    .about-home > .content > .left, .about-home > .content > .right {
+        min-height: 280px;
+        display: flex;
+    }
+
+    .about-home > .content > .right > .top {
+        height: 100%;
+    }
+
+    .about-home > .content > .right > .top > .left {
+        height: 100%;
+    }
+
+    .about-home > .content > .right > .top > .left > .bottom {
+        height: 100%;
+    }
+
+    .about-home > .content > .right > .top > .right {
+        height: unset;
+    }
+
+    .about-home > .content > .right > .top {
+        flex-direction: row;
+    }
+
+    .about-home > .content > .right > .top > .right {
+        height: 100%;
+    }
+
+    .about-home > .content > .right > .bottom {
+        width: calc(100% - (var(--page-x-deadzone) * 2));
+        position: absolute;
+        left: var(--page-x-deadzone);
+        top: calc(100% + 10px);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .about-home > .content > .left {
+        min-height: 400px;
+        height: auto;
+        width: 400px;
+        /* min-height: 300px;
+        max-height: 400px; */
+    }
+
+    .about-home > .content > .right {
+        height: auto;
+    }
+
+    .about-home > .content > .right > .bottom {
+        width: 100%;
+        position: static;
+        left: 0;
+        top: 0;
+    }
 }
