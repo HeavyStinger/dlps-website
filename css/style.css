@@ -391,7 +391,7 @@
 
 .contact-home > .content {
     width: calc(100% - (var(--page-x-deadzone) * 2));
-    background: linear-gradient(to top right, rgb(0, 104, 99), rgb(0, 201, 191));
+    background: var(--accent-background);
     margin: 0 auto;
     position: relative;
     border-radius: 10px;
@@ -459,4 +459,82 @@
     .contact-home > .content > .right {
         display: block;
     }
+}
+
+.page-banner {
+    width: 100%;
+    background: var(--accent-background);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-banner > .content > .title {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.services {
+    width: 100%;
+    margin-top: var(--inner-section-spacing);
+    padding: var(--page-x-deadzone);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.services > .card {
+    /* width: 33%; */
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    border: 2.5px solid rgb(233, 233, 233);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.services > .card > img {
+    max-height: 210px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.services > .card > .content {
+    width: 100%;
+    padding: 17px 13px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.services > .card > .content > .title {
+    width: 100%;
+}
+
+.services > .card > .content > .description {
+    width: 100%;
+    margin-top: 3px;
+    color: var(--secondary-text-color);
+}
+
+.services > .card > .content > .cta-button {
+    margin-top: auto;
+}
+
+.services.second > .card::after {
+    content: attr(duration);
+    background: var(--accent-background);
+    padding: 2px 10px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px 0 0 5px;
 }

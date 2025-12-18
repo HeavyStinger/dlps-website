@@ -29,9 +29,28 @@
 
         <!-- Stylesheet -->
         <link rel="stylesheet" href="./css/style.css">
+
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "DLPS Belize",
+            "url": "https://www.dlpsbelize.com/",
+            "logo": "https://www.dlpsbelize.com/images/logo-plain.png",
+            "sameAs": [
+                "https://www.facebook.com/yourpage",
+                "https://www.instagram.com/lasvibrascayecaulker"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+5016235029",
+                "contactType": "customer service"
+            }
+            }
+        </script>
     </head>
     <body>
-        <nav class="scrolling" role="navigation" aria-label="Main menu">
+        <nav role="navigation" aria-label="Main menu">
             <a href="./index.html" class="logo">
                 <img src="./images/logo-plain.png" alt="DLPS logo">
                 DLPS
@@ -176,7 +195,7 @@
                 <div class="bottom">
                     <div class="footer-links">
                         <div class="title">All Pages</div>
-                        <a href="./index.html">Home</a>
+                        <a href="./index.html" class="active">Home</a>
                         <a href="./services.html">Services</a>
                         <a href="./contact.html">Contact</a>
                         <a href="./news.html">News</a>
@@ -245,17 +264,6 @@
                 </a>
             </div>
         </footer>
-        <!-- <footer>
-            <div class="content">
-                <div class="logo">
-                    <img src="./images/logo-plain.png" alt="logo">
-                    <h2>DLPS</h2>
-                </div>
-                <div class="socials">
-
-                </div>
-            </div>
-        </footer> -->
         <script src="./js/main.js"></script>
     </body>
 </html>

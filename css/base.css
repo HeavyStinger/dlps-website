@@ -1,5 +1,4 @@
 html, body {
-    height: 100%;
     overflow-x: hidden;
     overscroll-behavior: none;
     scroll-behavior: smooth;
@@ -46,14 +45,6 @@ nav {
     box-shadow: 0 0px 5px var(--accent-color-transparent);
     position: relative;
     z-index: 2;
-}
-
-nav.scrolling {
-    background-color: white;
-}
-
-nav.scrolling > .logo, nav.scrolling > .nav-links > .nav-link {
-    color: var(--primary-text-color);
 }
 
 nav > .logo {
@@ -116,7 +107,7 @@ nav > .nav-links > .nav-link:hover {
 }
 
 nav > .nav-links > .nav-link.active {
-    color: var(--accent-color);
+    color: var(--accent-color) !important;
 }
 
 nav > .nav-links > .cta-button {
@@ -187,6 +178,15 @@ nav > .nav-links > .cta-button {
 
     nav > .cta-button {
         display: block;
+    }
+
+    nav.nothome {
+        background-color: white;
+        position: static;
+    }
+
+    nav.nothome > .logo, nav.nothome > .nav-links > .nav-link {
+        color: var(--primary-text-color);
     }
 }
 

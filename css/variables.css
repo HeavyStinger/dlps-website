@@ -2,6 +2,7 @@
     /* Backgrounds */
     --background-color: rgb(245, 245, 245);       /* Light neutral gray */
     --primary-color: rgb(255, 255, 255);          /* White for cards/sections */
+    --accent-background: linear-gradient(to top right, rgb(0, 104, 99), rgb(0, 201, 191));
 
     /* Brand / Accent */
     --accent-color: rgb(0, 168, 160);           /* Tropical teal for links, buttons, highlights */
