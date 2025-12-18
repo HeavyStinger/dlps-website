@@ -32,7 +32,7 @@ header h1 {
 
 /* The lines of the hamburger */
 .navicon {
-  background: white;
+  background: var(--accent-color);
   display: block;
   height: 2px;
   width: 22px;
@@ -43,7 +43,7 @@ header h1 {
 .navicon:before,
 .navicon:after {
   content: "";
-  background: white;
+  background: var(--accent-color);
   display: block;
   width: 100%;
   height: 100%;
