@@ -27,6 +27,7 @@ body {
     padding: 8px 32px;
     color: white;
     text-align: center;
+    text-decoration: none;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -45,6 +46,14 @@ nav {
     box-shadow: 0 0px 5px var(--accent-color-transparent);
     position: relative;
     z-index: 2;
+}
+
+nav.scrolling {
+    background-color: white;
+}
+
+nav.scrolling > .logo, nav.scrolling > .nav-links > .nav-link {
+    color: var(--primary-text-color);
 }
 
 nav > .logo {
@@ -100,6 +109,10 @@ nav > .nav-links > .nav-link {
     color: var(--primary-text-color);
     position: relative;
     border-bottom: 1px solid var(--accent-color-transparent);
+}
+
+nav > .nav-links > .nav-link:hover {
+    color: var(--accent-color);
 }
 
 nav > .nav-links > .nav-link.active {
@@ -175,4 +188,58 @@ nav > .nav-links > .cta-button {
     nav > .cta-button {
         display: block;
     }
+}
+
+footer {
+    width: 100%;
+    margin-top: var(--page-y-spacing);
+    padding: var(--page-x-deadzone);
+    background-color: var(--primary-color);
+}
+
+footer > .content {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer > .content > .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer > .content > .logo > img {
+    height: 100px;
+}
+
+footer > .content > .socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+footer > .content > .socials > a {
+    display: block;
+}
+
+footer > .content > .socials > a:hover > svg {
+    fill: var(--accent-color);
+}
+
+footer > .content > .socials > a > svg {
+    height: 17px
+}
+
+.designer {
+    width: 100%;
+    background: linear-gradient(to top right, rgb(0, 104, 99), rgb(0, 201, 191));
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
