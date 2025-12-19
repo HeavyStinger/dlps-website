@@ -538,3 +538,171 @@
     font-size: 14px;
     border-radius: 5px 0 0 5px;
 }
+
+/* Contact page */
+
+.contact {
+    width: 100%;
+    margin-top: var(--page-y-spacing);
+    padding: 0 var(--page-x-deadzone);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--page-y-spacing);
+}
+
+.contact > .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.contact > .left > .title {
+    width: fit-content;
+    position: relative;
+}
+
+.contact > .left > .title::after {
+    content: "";
+    height: 2.5px;
+    width: 100%;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 10px;
+}
+
+.contact > .left > .subtitle, .contact > .left > .note {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact > .left > .socials {
+    width: 100%;
+    display: flex;
+    gap: 14px;
+}
+
+.contact > .left > .map {
+    height: 100%;
+    margin-top: auto;
+    border-radius: 10px;
+}
+
+.contact > .left > .socials > a > svg {
+    height: 20px;
+}
+
+.contact > .left > .socials > a > svg:hover {
+    fill: var(--accent-color);
+}
+
+.contact > .right > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact > .right > form > .form-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.contact > .right > form .input-custom {
+    width: 100%;
+    padding: 10px;
+    font-family: var(--primary-font);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+    outline: none;
+    transition: border .1s ease;
+}
+
+.contact > .right > form textarea.input-custom {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact > .right > form .input-custom:hover {
+    border: 2px solid var(--accent-color-transparent);
+}
+
+.contact > .right > form fieldset {
+    border: none;
+}
+
+.contact > .right > form legend {
+    margin-bottom: 10px;
+}
+
+.contact > .right > form .select-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.contact > .right > form .select-wrapper > select {
+    width: 100%;
+    cursor: pointer;
+}
+
+.contact > .right > form .select-wrapper::after {
+    content: "";
+    height: 5px;
+    width: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.contact > .right > form .cta-button {
+    width: 100%;
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    border: none;
+}
+
+.contact > .right > form .cta-button svg {
+    height: 20px;
+    fill: white;
+}
+
+@media only screen and (min-width: 850px) {
+    .contact {
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 100px;
+    }
+
+    .contact > .left > .title {
+        font-size: 40px;
+    }
+
+    .contact > .left > .subtitle, .contact > .left > .note {
+        font-size: 16px;
+    }
+
+    .contact > .left > .socials {
+        margin-bottom: 10px;
+    }
+
+    .contact > .right > form > .form-group {
+        grid-template-columns: 1fr 1fr;
+    }
+}

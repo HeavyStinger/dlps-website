@@ -188,6 +188,10 @@ nav > .nav-links > .cta-button {
     nav.nothome > .logo, nav.nothome > .nav-links > .nav-link {
         color: var(--primary-text-color);
     }
+
+    nav.nothome > .nav-links > .nav-link:hover {
+        color: var(--accent-color);
+    }
 }
 
 /* Dupe footer */
