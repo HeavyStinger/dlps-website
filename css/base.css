@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    width: 100vw;
+    width: 100dvw;
     background-color: var(--background-color);
     color: var(--primary-text-color);
     font-family: var(--primary-font);
