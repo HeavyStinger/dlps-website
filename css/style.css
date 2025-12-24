@@ -735,6 +735,10 @@
     gap: 25px;
 }
 
+.news > .blog-highlight .blog-card {
+    overflow: hidden;
+}
+
 .news > .blog-highlight > .left > .top > h2 {
     margin-bottom: 25px;
 }

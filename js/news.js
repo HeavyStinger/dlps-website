@@ -31,6 +31,7 @@ fetch (googleSheetURL)
 
         // Build Image
         const newImage = document.createElement("img");
+        newImage.classList.add("blog-visual");
         newImage.src = "./images/blog/" + imgName;
         newImage.alt = "Picture for news card '" + title + "'";
         latest.appendChild(newImage);
@@ -81,6 +82,7 @@ fetch (googleSheetURL)
 
         // Build Image
         const newImage = document.createElement("img");
+        newImage.classList.add("blog-visual");
         newImage.src = "./images/blog/" + imgName;
         newImage.alt = "Picture for news card '" + title + "'";
         newPost.appendChild(newImage);
