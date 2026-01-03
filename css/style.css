@@ -1134,3 +1134,28 @@
     font-size: 14px;
     color: var(--secondary-text-color);
 }
+
+/* Article page */
+
+#article-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#article-description {
+    margin-top: 10px;
+    padding: 0 var(--page-x-deadzone);
+    font-size: 16px;
+    color: var(--secondary-text-color);
+}
+
+@media only screen and (min-width: 650px) {
+    #article-image {
+        max-height: 650px;
+        width: calc(100% - (var(--page-x-deadzone) * 2));
+        margin: var(--page-y-spacing) var(--page-x-deadzone) 0 var(--page-x-deadzone);
+        border-radius: 10px;
+    }
+}
