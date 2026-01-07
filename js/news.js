@@ -1,7 +1,7 @@
 // Get rows from dedicated spreadsheet
 
 // define spreadsheet
-const googleSheetURL = "https://docs.google.com/spreadsheets/d/17rNva0XRsboNKJh0h5XYbQNPGf2UVboVgCECKut5exk/gviz/tq?tqx=out:json";
+const googleSheetURL = "https://docs.google.com/spreadsheets/d/1gP4maxgPtK7DD-o1Uj9z6Qi_YEUUpfH7gNQs856rGrM/gviz/tq?tqx=out:json";
 
 // Define posts container
 const allPosts = document.getElementById("all-posts");
