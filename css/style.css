@@ -754,7 +754,7 @@
 }
 
 .news .blog-card {
-    max-width: 310px;
+    width: 310px;
     display: flex;
     flex-direction: column;
     border: 2.5px solid rgb(233, 233, 233);

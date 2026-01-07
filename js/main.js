@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (skateType == "OG") {
             button.href = page;
         }
-        else if (skateType.includes("admin-prod")) {
+        else if (skateType.includes("main-services")) {
             const values = skateType.split("|");
-            button.href = page + "?" + "servicetype=Administrative%20Products" + "&service=" + values[1];
+            button.href = page + "?" + "servicetype=Main%20Services" + "&service=" + values[1];
         }
-        else if (skateType.includes("ed-prod")) {
+        else if (skateType.includes("most-popular-trainings")) {
             const values = skateType.split("|");
-            button.href = page + "?" + "servicetype=Trainings%20for%20Educational%20Development" + "&service=" + values[1];
+            button.href = page + "?" + "servicetype=Most%20Popular%20Trainings" + "&service=" + values[1];
         }
         else {
             return;

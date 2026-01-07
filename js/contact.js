@@ -2,8 +2,8 @@ const requiredDropdown = document.getElementById("required-dropdown");
 const optionalMenuContainer = document.getElementById("optional-menu-container");
 
 // menu options
-const serviceTypeOptions = ["Administrative Products",
-    "Trainings for Educational Development"];
+const serviceTypeOptions = ["Main Services",
+    "Most Popular Trainings"];
 const adminMenuOptions = ["Not Listed",
     "LMS Management",
     "Digitalize Courses",
@@ -23,7 +23,7 @@ const edTrainingMenuOptions = ["Not Listed",
 function handleMenus() {
     optionalMenuContainer.innerHTML = "";
     const selectedOption = requiredDropdown.value;
-    if (selectedOption !== "Administrative Products" && selectedOption !== "Trainings for Educational Development") {
+    if (selectedOption !== "Main Services" && selectedOption !== "Most Popular Trainings") {
         return false;
     }
 
@@ -46,10 +46,10 @@ function handleMenus() {
 
     // define legend and menu options depending on dropdown value
     let menuOptions;
-    if (selectedOption == "Administrative Products") {
+    if (selectedOption == "Main Services") {
         menuOptions = adminMenuOptions;
     }
-    else if (selectedOption == "Trainings for Educational Development") {
+    else if (selectedOption == "Most Popular Trainings") {
         menuOptions = edTrainingMenuOptions;
     }
 
@@ -88,12 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!service) {
         return;
     }
-    if (serviceType === "Administrative Products") {
+    if (serviceType === "Main Services") {
         if (!adminMenuOptions.includes(service)) {
             return;
         }
     }
-    else if (serviceType === "Trainings for Educational Development") {
+    else if (serviceType === "Most Popular Trainings") {
         if (!edTrainingMenuOptions.includes(service)) {
             return;
         }

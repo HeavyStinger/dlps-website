@@ -32,7 +32,13 @@ fetch (googleSheetURL)
         // Build Image
         const newImage = document.createElement("img");
         newImage.classList.add("blog-visual");
-        newImage.src = "./images/blog/" + imgName;
+        newImage.setAttribute("loading", "lazy");
+        if (imgName.includes("http")) {
+            newImage.src = imgName;
+        }
+        else {
+            newImage.src = "./images/blog/" + imgName;
+        }
         newImage.alt = "Picture for news card '" + title + "'";
         latest.appendChild(newImage);
 
@@ -83,7 +89,12 @@ fetch (googleSheetURL)
         // Build Image
         const newImage = document.createElement("img");
         newImage.classList.add("blog-visual");
-        newImage.src = "./images/blog/" + imgName;
+        if (imgName.includes("http")) {
+            newImage.src = imgName;
+        }
+        else {
+            newImage.src = "./images/blog/" + imgName;
+        }
         newImage.alt = "Picture for news card '" + title + "'";
         newPost.appendChild(newImage);
 
