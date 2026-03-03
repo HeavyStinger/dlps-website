@@ -6,7 +6,7 @@ const serviceTypeOptions = ["Main Services",
     "Most Popular Trainings"];
 const adminMenuOptions = ["Not Listed",
     "LMS Management",
-    "Digitalize Courses",
+    "E-Course Development",
     "Speaker"];
 const edTrainingMenuOptions = ["Not Listed",
     "AIden Teach",
